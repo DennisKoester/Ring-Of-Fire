@@ -1,7 +1,7 @@
 .player {
     display: flex;
     align-items: center;
-    background-color: orange;
+    background-color: rgba(50, 50, 50, 0.9);
     width: 300px;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
@@ -12,10 +12,15 @@
     }
 
     img {
-        height: 100px;
-        width: 100px;
+        height: 70px;
+        width: 70px;
         object-fit: cover;
         border-radius: 100%;
-
+        margin: 5px;
     }
+
+}
+
+.player-active {
+    background-color: rgba(255, 166, 0, 0.9) !important;
 }
