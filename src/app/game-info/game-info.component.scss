@@ -1,5 +1,9 @@
-.mat-mdc-card {
+mat-card {
     min-height: 55px;
+    
+    @media (max-width: 720px) {
+        min-height: 120px;
+    }
 }
 
 .mat-mdc-card-title{

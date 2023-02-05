@@ -73,6 +73,7 @@
     position: absolute;
     bottom: 20px;
     right: 20px;
+    z-index: 1;
 }
 
 .pin-bottom {
@@ -80,4 +81,24 @@
     bottom: 20px;
     left: 100px;
     right: 100px;
+
+    @media (max-width: 720px) {
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+.scroll-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    app-player-mobile{
+        margin-left: 8px;
+    }
 }
